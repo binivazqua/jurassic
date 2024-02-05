@@ -4,17 +4,22 @@
   src: url(/resources/Industry-BoldItalic.ttf);
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*width: 100%;*/
+  /*height: 100%;*/
+
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: rgb(0, 0, 0)
+  align-items: center;
+  /*flex-direction: column;*/
+  /*flex-wrap: wrap;*/
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -33,12 +38,10 @@ h1 {
 }
 
 .logo {
-    width: 200px;
+    width: 100px;
     display: block;
-    align-content: start;
-    margin-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .buttons {
@@ -67,3 +70,91 @@ h1 {
  #buttonPit:active {
     border-color: #fff;
   }
+
+  /* NAVBAR */
+  .navbar {
+    position: relative;
+    height: 120px;
+    width: 500px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    position: relative;
+    display: flex;
+  }
+
+  .navbar ul li{
+    position: relative;
+    list-style-type: none;
+  }
+
+  .navbar ul li a {
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
+    
+  }
+
+  .navbar ul li a i{
+    position: absolute;
+    font-size: 34px;
+    color: #ee2737;
+
+  }
+
+  ul li a i .activeIcon{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar ul .indicator{
+    position: absolute;
+    bottom: -19px;
+    left: 34px;
+    height: 36px;
+    width: 25px;
+    background: #ee2737;
+    border-radius: 50%;
+  }
+
+  ul .indicator::before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    height: 22px;
+    width: 20px;
+    bottom: 50%;
+    background: white;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 0 #ee2737;
+    
+  }
+
+  ul .indicator::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    height: 22px;
+    width: 20px;
+    bottom: 50%;
+    background: white;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 0 #ee2737;
+    
+  }
+
+
+
+
