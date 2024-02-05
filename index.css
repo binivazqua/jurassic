@@ -114,10 +114,12 @@ h1 {
 
   }
 
+
   ul li a i .activeIcon{
     opacity: 0;
     pointer-events: none;
   }
+
 
   .navbar ul .indicator{
     position: absolute;
