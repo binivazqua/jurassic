@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
+@font-face {
+    font-family: Industry;
+    src: url(/resources/Industry-BoldItalic.ttf);
+}
 /*font-family: 'Inter', sans-serif;*/
 
 /* BASE CASES */
@@ -17,12 +21,15 @@ html {
 body {
     margin:var(--header-height) 0 0 0;
     font-family: var(--body-font);
-    font-size: var(--text-font-size);
+    /*font-size: var(--text-font-size);*/
     background-color: var(--body-col);
     color: var(--text-col);
+    align-content: center;
+    text-align: center;
+    
 }
 
-/* lists*/
+/* lists */
 
 ul {
     list-style: none;
@@ -44,10 +51,13 @@ img {
 }
 
 .section__title {
-    font-size: var(--h1-font-size);
+    font-size: 4rem;
+    font-family: 'Industry';
+    text-transform: uppercase;
     color: var(--title-col);
     text-align: center;
     margin-bottom: 1.5rem;
+    margin-top: 8rem;
 
 }
 
@@ -62,12 +72,13 @@ img {
     max-width: 968px; /* medium size */
     margin-left: 1rem;
     margin-right: 1rem; /* checar*/
+    margin: auto;
 
 }
 /* VARIABLESSS */
 
 :root {
-    --header-height: 3rem;
+    --header-height: 10rem;
 
     /* color */
     --hue: 174;
@@ -75,15 +86,16 @@ img {
 
     --first-col: hsl(var(--hue), var(--saturation), 40%);
     --first-col-alt: hsl(var(--hue), var(--saturation), 36%);
-    --title-col: hsl(var(--hue), 12%, 15%);
-    --text-col: hsl(var(--hue), 8%, 35%);
-    --body-col: hsl(var(--hue), 100%, 99%);
-    --container-col: white;
+    --title-col: #ee2737;
+    --text-col: white;
+    --body-col: white;
+    --container-col: black;
 
     /* fonts */
     --body-font: 'Inter', sans-serif;
+    --title-font: 'Industry';
 
-    --h1-font-size: 1.5rem;
+    --h1-font-size: 4rem;
     --text-font-size: 1rem;
     --petite-font-size: 0.75rem;
 
@@ -112,7 +124,10 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    height: var(--header-height);
+    margin: auto;
     background-color: var(--container-col);
+
 }
 
 /* ===================NAV =====================*/
@@ -122,15 +137,32 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    vertical-align: middle;
+
+}
+
+.nav__menu {
+    margin: auto;
 }
 
 .nav__img {
-    width: 32px; /* cambiar */
+    width: 125px; /* cambiar */
+    margin-right: 100;
+    position: absolute;
+    left: 10px;
+    margin: 1rem 1rem !important;
+    top: 10px;
 }
 
 .nav__logo {
-    color: var(--title-col);
+    color: var(--text-col);
+    font-size: var(--h1-font-size);
+    font-family: 'Industry';
+    text-transform: uppercase;
     font-weight: 600;
+    position: absolute;
+    right: 50px;
 }
 
 .nav__list,
@@ -142,7 +174,7 @@ img {
     flex-direction: column;
     align-items: center;
     row-gap: 0.25rem;
-    color: var(--title-col);
+    color: var(--text-col);
     font-weight: 400;
 }
 
@@ -157,6 +189,8 @@ img {
 .nav__icon {
     font-size: 1.5rem;
 }
+
+
 
 /* ====================== ACTIVE LINK  ===================== */
 .active-link{
@@ -184,7 +218,7 @@ img {
 
 /* ======================= CHANGE BG HEADER JS ================== */
 .scroll-header {
-    box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15); /* change if necessary */
+    box-shadow: 0 1px 12px white; /* change if necessary */
 }
 
 /* ================= NON-MINIMALIST MEDIA-QUERY ADDITION =======*/
