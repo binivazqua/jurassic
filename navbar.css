@@ -53,7 +53,7 @@ img {
 
 
 .section__height {
-    height: 100vh;
+    height: 100vh; /** nomás pq se vea así*/
 }
 
 
