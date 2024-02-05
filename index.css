@@ -1,0 +1,69 @@
+/* create fonts */
+@font-face {
+  font-family: Industry;
+  src: url(/resources/Industry-BoldItalic.ttf);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(0, 0, 0)
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: #960c0c;
+    font-size: 4rem;
+    font-family: 'Industry';
+    color: #e40808;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    align-content: start;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+ #buttonPit {
+    background-color: rgb(221, 17, 17);
+    color: #fff;
+    border: 2px solid #dd1212;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    font-size: 22px;
+  }
+  
+ #buttonPit:hover {
+    background-color: #960c0c;
+    transition: background-color .15s, font-size .15s;
+    font-size: 18px;
+  }
+  
+ #buttonPit:active {
+    border-color: #fff;
+  }
