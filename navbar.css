@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+/*font-family: 'Inter', sans-serif;*/
+
+/* VARIABLESSS */
+
+:root {
+    --header-height: 3rem;
+
+    /* color */
+    --hue: 174;
+    --saturation: 63%;
+
+    --first-col: hsl(var(--hue), var(--saturation), 40%);
+    --first-col-alt: hsl(var(--hue), var(--saturation), 36%);
+    --title-col: hsl(var(--hue), 12%, 15%);
+    --text-col: hsl(var(--hue), 8%, 35%);
+    --body-col: hsl(var(--hue), 100%, 99%);
+    --container-col: white;
+
+    /* fonts */
+    --body-font: 'Inter', sans-serif;
+
+    --h1-font-size: 1.5rem;
+    --text-font-size: 1rem;
+    --petite-font-size: 0.5rem;
+
+    /* z index and others */
+    --z-tooltip: ;
+    --z-fixed: ;
+}
+
+/* RESPONSIVENESS */
+
+/*typography*/
+
+@media screen and (min-width: 968px){
+    :root{
+        --h1-font-size: 2.2rem;
+        --text-font-size: 1rem;
+         
+    }
+}
