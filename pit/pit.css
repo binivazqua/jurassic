@@ -4,3 +4,56 @@
     font-family: Industry;
     src: url(/resources/Industry-BoldItalic.ttf);
 }
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+    min-height: 100vh;
+}
+
+/* =============== FORM CONTAINER ================== */
+
+.container {
+    position: relative;
+    background-color: white;
+    max-width: 900px;
+    width: 100%;
+    padding: 3rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+.container header > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.container header p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+.container form {
+    background-color: bisque;
+    position: relative;
+    min-height: 490px;
+}
+
+.container form .mobility {
+    margin-top: 10px;
+}
+
+.container form .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.25 rem;
+}

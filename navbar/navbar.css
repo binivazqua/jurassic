@@ -175,6 +175,7 @@ img {
     align-items: center;
     row-gap: 0.25rem;
     color: var(--text-col);
+    transition: 0.3s;
     font-weight: 400;
 }
 
@@ -196,7 +197,7 @@ img {
 .active-link{
     position: relative;
     color: #ee2737;
-    transition: 0.35s;
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 767px) { /* iPad size */
