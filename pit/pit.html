@@ -26,9 +26,13 @@
         
 
             <span class ="title"> <h3>Robot</h3> </span>
-            <input type="text" id="teamNameInput" name="teamNameInput">
-            <label for="numero_equipo">Número del Equipo:</label>
+
+            <div class="team-number">
+                <label for="numero_equipo">Número del Equipo:</label>
                     <input type="number" id="numero_equipo" name="numero_equipo">
+            </div>
+            
+            
 
             <div class="fields">    
           
@@ -104,13 +108,17 @@
                         </select>
                 </div>
             </div>
+
+            
+           
        
 
     </form>
-
-    <a href="/pitScout/homePage/pitScouting.html"><button id="back-button">Back: General</button></a>
-    <a href="/pitScout/drivers/drivers.html"><button id="next-button">Next: Drivers</button></a>
-
+    <div class="buttons">
+        <a href="/pitScout/homePage/pitScouting.html"><button id="back-button">Back: General</button></a>
+        <a href="/pitScout/drivers/drivers.html"><button id="next-button">Next: Drivers</button></a>
+    </div>
+    
     </div>
 
 </body>
