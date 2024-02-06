@@ -43,7 +43,7 @@ body {
 }
 
 .container form {
-    background-color: bisque;
+    /*background-color: bisque;*/
     position: relative;
     min-height: 490px;
 }
@@ -53,7 +53,45 @@ body {
 }
 
 .container form .title {
+    display: block;
+    margin-top: 8px;
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0.25 rem;
+}
+
+.container form .fields {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+form .fields .input-field {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/ 3 - 1rem);
+}
+
+input {
+    height: 32px;
+    margin: 5px 0;
+    width: 15rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+input:focus-visible{
+    box-shadow: 0 3px 6px black;
+}
+
+
+label {
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+
 }
