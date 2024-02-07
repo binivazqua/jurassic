@@ -202,7 +202,7 @@ select:hover {
 }
 
 .radio-language-options {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: block;
     align-self: center;
     /*background-color: #000000;*/
@@ -220,4 +220,6 @@ select:hover {
     height: 70px;
 }
 
-
+.radio-group {
+    margin-top: 10px;
+}
