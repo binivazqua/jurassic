@@ -14,10 +14,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: pink;
+    background: black;
     min-height: 100vh;
 }
 
+h3,
+h1 {
+    font-family: 'Industry';
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+}
 /* =============== FORM CONTAINER ================== */
 
 .container {
@@ -70,6 +79,7 @@ div .team-number {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
 
 }
 
@@ -117,8 +127,15 @@ label {
     background-color: #ee2737;
 }
 
+button:hover{
+    background-color: black;
+}
+
+
 div .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
