@@ -16,326 +16,428 @@
 
     <div class="container">
 
-    <header>
-        <h1>Pit Scouting: Auto</h1>
-        <p> Please provide the next info of the team on the autonomous period</p>
+        <header>
+            <h1>Pit Scouting: Auto</h1>
+            <p> Please provide the next info of the team on the autonomous period</p>
 
-    </header>
+        </header>
    
-    <form  id= "formulariopit" class="pitForm" action="#">       
-        
-
-            
-            
-            <div class="form first">
-                <div class="robot">
-
-                <span class ="title"> <h3>Robot</h3> </span>
-
-                <div class="team-number">
-                    <label for="numero_equipo">Número del Equipo:</label>
-                    <input type="number" id="numero_equipo" name="numero_equipo">
-                </div>
-                <!--<div class="fields tipo-chasis"> -->
-
-                    <div class="fields">    
+            <form  id= "formulariopit" class="pitForm" action="#">       
                 
+
                     
-                        <div class="input-field"> 
-                            <label class="radio-group" for="tipo-de-chasis">Chassis type</label>
-                            <select type="select"  id="tipo-de-chasis" name="tipoDeChasis" >
-
-                                <option >Select Chassis</option>
-                                <option value="Tank">Tanque</option>
-                                <option value="Swerve">Swerve</option>
-                                <option value="Mecanum">Mecanum</option>
-                                <option value="Dragonfly">Dragonfly</option>
-
-                            </select>
-                        </div>
-
-                
-                        <div class="input-field">
-                            <label for="chasisMotorsSelect" class="radio-group">Motor(s) used on chasis</label>
-                            <select type="select" name="motorsChassisSelect" id="motorsChassisSelect" >
-
-                                <option>Select option</option>
-                                <option value="Neo">Neo</option>
-                                <option value="Neo 550">Neo 550</option>
-                                <option value="Neo Vortex">Neo Vortex</option>
-                                <option value="Kraken">Kraken</option>
-                                <option value="Falcon">Falcon</option>
-                                <option value="Cim">Cim</option>
-
-                            </select>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="robotWeightSelect" class="radio-group">Robot's weight</label>
-                            <select type="select" name="robotWeightSelect" id="robotWeightSelect" >
-
-                                <option>Select option</option>
-                                <option value="X">X</option>
-                                <option value="X">X</option>
-                                <option value="X">X</option>
-
-                            </select>
-                        </div>
-
-                        
-
-                        <div class="input-field">
-                            <label class="radio-group" for="wheel-type">Wheel type</label>
-                            <select type="select"  id="wheel-type" name="tipoDeLlanta">
-
-                                <option >Select Wheel</option>
-                                <option value="omni">Omni</option>
-                                <option value="colson">Colson</option>
-                                <option value="kop">Kop</option>
-                                <option value="plaction">Plaction</option>
-                                <option value="pneumatic">Pneumatic</option>
-                                <option value="mecanum">Mecanum</option>
-                                <option value="other">Other:</option>
-                            
-                            </select>
-                        </div>
                     
-                        <div class="input-field">
-                                <label for="robotMeasureSelect" class="radio-group">Robot Measures</label>
-                                <select name="robotMeasureSelect" id="robotMeasureSelect">
+                    <div class="form first">
+                        <div class="robot">
 
-                                    <option>Select option</option>
-                                    <option value="X">X</option>
-                                    <option value="X">X</option>
-                                    <option value="X">X</option>
+                                <span class ="title"> <h3>Robot</h3> </span>
 
-                                </select>
-                        </div>
-                    
-
-                    </div>
-       
-            </div>
-            
-            <!-- =========================================== PROGRA =================================================-->
-
-            <div class="form second">
-
-                <div class="robot">
-
-                <span class ="title"> <h3>Programming</h3> </span>
-                
-                <!--
-                <div class="team-number">
-                    <label for="numero_equipo">Número del Equipo:</label>
-                    <input type="number" id="numero_equipo" name="numero_equipo">
-                </div>
-                -<div class="fields tipo-chasis"> -->
-                
-                    <div class="fields">    
-                
-                    
-                        <div class="input-field"> 
-                            <div class="radio-group">
-
-                                <label>Language</label>
-                    
-                                <div class="radio-language-options">
-                                    <input type="radio" id="java" name="progInput" class="programming-language-input" value="java">
-                                    <label for="java"><img src="/resources/progra/bxl-java.svg" class="programming-language-label" id="java-logo"></label>
-                           
-                                    <input type="radio" id="cpp" name="progInput" class="programming-language-input" value="c++">
-                                    <label for="cpp"><img src="/resources/progra/bxl-c-plus-plus.svg" class="programming-language-label" height="45px" width="auto" id="cpp-logo"/></label>
-                    
-                                    <input type="radio" id="python" name="progInput" class="programming-language-input" value="python">
-                                    <label for="python"><img src="/resources/progra/bxl-python.svg" class="programming-language-label" height="45px" width="auto" id="python-logo"/></label>
-                    
-                                    <input type="radio" id="labview" name="progInput" class="programming-language-input" value="labview">
-                                    <label for="labview"><img src="/resources/progra/bxl-play-store.svg" class="programming-language-label" height="45px" width="auto" id="labview-logo" ></label>
+                                    <div class="team-number">
+                                        <label for="numero_equipo">Número del Equipo:</label>
+                                        <input type="number" id="numero_equipo" name="numero_equipo">
                                 </div>
+                            
+
+                                <div class="fields">    
+                            
+                                    
+                                        <div class="input-field"> 
+                                            <label class="radio-group" for="tipo-de-chasis">Chassis type</label>
+                                            <select type="select"  id="tipo-de-chasis" name="tipoDeChasis" >
+
+                                                <option >Select Chassis</option>
+                                                <option value="Tank">Tanque</option>
+                                                <option value="Swerve">Swerve</option>
+                                                <option value="Mecanum">Mecanum</option>
+                                                <option value="Dragonfly">Dragonfly</option>
+
+                                            </select>
+                                        </div>
+
+                                
+                                        <div class="input-field">
+                                            <label for="chasisMotorsSelect" class="radio-group">Motor(s) used on chasis</label>
+                                            <select type="select" name="motorsChassisSelect" id="motorsChassisSelect" >
+
+                                                <option>Select option</option>
+                                                <option value="Neo">Neo</option>
+                                                <option value="Neo 550">Neo 550</option>
+                                                <option value="Neo Vortex">Neo Vortex</option>
+                                                <option value="Kraken">Kraken</option>
+                                                <option value="Falcon">Falcon</option>
+                                                <option value="Cim">Cim</option>
+
+                                            </select>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label for="robotWeightSelect" class="radio-group">Robot's weight</label>
+                                            <select type="select" name="robotWeightSelect" id="robotWeightSelect" >
+
+                                                <option>Select option</option>
+                                                <option value="X">X</option>
+                                                <option value="X">X</option>
+                                                <option value="X">X</option>
+
+                                            </select>
+                                        </div>
+
+                                        
+
+                                        <div class="input-field">
+                                            <label class="radio-group" for="wheel-type">Wheel type</label>
+                                            <select type="select"  id="wheel-type" name="tipoDeLlanta">
+
+                                                <option >Select Wheel</option>
+                                                <option value="omni">Omni</option>
+                                                <option value="colson">Colson</option>
+                                                <option value="kop">Kop</option>
+                                                <option value="plaction">Plaction</option>
+                                                <option value="pneumatic">Pneumatic</option>
+                                                <option value="mecanum">Mecanum</option>
+                                                <option value="other">Other:</option>
+                                            
+                                            </select>
+                                        </div>
+                                    
+                                        <div class="input-field">
+                                                <label for="robotMeasureSelect" class="radio-group">Robot Measures</label>
+                                                <select name="robotMeasureSelect" id="robotMeasureSelect">
+
+                                                    <option>Select option</option>
+                                                    <option value="X">X</option>
+                                                    <option value="X">X</option>
+                                                    <option value="X">X</option>
+
+                                                </select>
+                                        </div>
+                                
+
+                                </div>
+            
+                        </div>
+            
+                    </div>
+
+    
+                    
+                    <!-- =========================================== PROGRA =================================================-->
+
+                    <div class="form second">
+
+                        <div class="robot">
+
+                        <span class ="title"> <h3>Programming</h3> </span>
+                        
+                        <!--
+                        <div class="team-number">
+                            <label for="numero_equipo">Número del Equipo:</label>
+                            <input type="number" id="numero_equipo" name="numero_equipo">
+                        </div>
+                        -<div class="fields tipo-chasis"> -->
+                        
+                            <div class="fields">    
+                        
+                            
+                                    <div class="input-field"> 
+                                               <div class="radio-group">
+
+                                                    <label>Language</label>
+                                        
+                                                    <div class="radio-language-options">
+                                                        <input type="radio" id="java" name="progInput" class="programming-language-input" value="java">
+                                                        <label for="java"><img src="/resources/progra/bxl-java.svg" class="programming-language-label" id="java-logo"></label>
+                                            
+                                                        <input type="radio" id="cpp" name="progInput" class="programming-language-input" value="c++">
+                                                        <label for="cpp"><img src="/resources/progra/bxl-c-plus-plus.svg" class="programming-language-label" height="45px" width="auto" id="cpp-logo"/></label>
+                                        
+                                                        <input type="radio" id="python" name="progInput" class="programming-language-input" value="python">
+                                                        <label for="python"><img src="/resources/progra/bxl-python.svg" class="programming-language-label" height="45px" width="auto" id="python-logo"/></label>
+                                        
+                                                        <input type="radio" id="labview" name="progInput" class="programming-language-input" value="labview">
+                                                        <label for="labview"><img src="/resources/progra/bxl-play-store.svg" class="programming-language-label" height="45px" width="auto" id="labview-logo" ></label>
+                                                    </div>
+
+                                                </div>
+                                    </div>
+
+                            
+                                    <div class="input-field has-vision">
+                                        <label for="hasVisionSelect" class="radio-group">Do they have vision?</label>
+                                        <select type="select" name="hasVisionSelect" id="hasVisionSelect" >
+
+                                                <option>Select option</option>
+                                                <option value="The DON'T have vision">No</option>
+                                                <option value="They have vision">Yes</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field visionProcess">
+                                        <label for="visionProcessSelect" class="radio-group">How do they process their vision?</label>
+                                        <select type="select" name="visionProcessSelect" id="visionProcessSelect" >
+                                            <option>Select option</option>
+                                            <option value="The DON'T have vision">The don't have vision</option>
+                                            <option value="Limelight">Limelight</option>
+                                            <option value="Raspberry">Raspberry</option>
+                                            <option value="Google Coral">Google Coral</option>
+                                            <option value="Orange Pi">Orange Pi</option>
+                                            <option value="Webcam alone">Only webcam</option>
+                                        </select>
+                                    
+                                    </div>
+
+                                    
+
+                                    <div class="input-field">
+                                        <label for="numberOfCamerasInput">Number of cameras in robot:</label>
+                                            <input type="number" id="numberOfCamerasInput" name="numberOfCamerasInput">
+                                    </div>
+                                
+                                    <div class="input-field">
+                                        <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
+                                        <select type="select"  id="leavesSelect" required>
+
+                                            <option >Select option </option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+
+
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field poseEstimationDiv">
+                                        <label for="poseEstimationSelect" class="radio-group">Do they have pose estimation?</label>
+                                        <select type="select" name="poseEstimationSelect" id="poseEstimationSelect" >
+                                            <option>Select option</option>
+                                            <option value="The DON'T have pose estimation">Yes</option>
+                                            <option value="They have pose estimation">No</option>
+                                        </select>
+                                    </div>
+                                
                             </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <a style="text-decoration: none"/pitScout/homePage/pitScouting.html"><button id="back-button">Back: General</button></a>
                         </div>
-
-                
-                        <div class="input-field has-vision">
-                            <label for="hasVisionSelect" class="radio-group">Do they have vision?</label>
-                            <select type="select" name="hasVisionSelect" id="hasVisionSelect" >
-
-                                    <option>Select option</option>
-                                    <option value="The DON'T have vision">No</option>
-                                    <option value="They have vision">Yes</option>
-
-                            </select>
-                        </div>
-
-                        <div class="input-field visionProcess">
-                            <label for="visionProcessSelect" class="radio-group">How do they process their vision?</label>
-                            <select type="select" name="visionProcessSelect" id="visionProcessSelect" >
-                                <option>Select option</option>
-                                <option value="The DON'T have vision">The don't have vision</option>
-                                <option value="Limelight">Limelight</option>
-                                <option value="Raspberry">Raspberry</option>
-                                <option value="Google Coral">Google Coral</option>
-                                <option value="Orange Pi">Orange Pi</option>
-                                <option value="Webcam alone">Only webcam</option>
-                            </select>
-                           
-                        </div>
-
-                        
-
-                        <div class="input-field">
-                            <label for="numberOfCamerasInput">Number of cameras in robot:</label>
-                                 <input type="number" id="numberOfCamerasInput" name="numberOfCamerasInput">
-                        </div>
-                    
-                        <div class="input-field">
-                            <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
-                            <select type="select"  id="leavesSelect" required>
-
-                                <option >Select option </option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-
-
-                            </select>
-                        </div>
-
-                        <div class="input-field poseEstimationDiv">
-                            <label for="poseEstimationSelect" class="radio-group">Do they have pose estimation?</label>
-                            <select type="select" name="poseEstimationSelect" id="poseEstimationSelect" >
-                                <option>Select option</option>
-                                <option value="The DON'T have pose estimation">Yes</option>
-                                <option value="They have pose estimation">No</option>
-                            </select>
+                        <div class="nextBtn">
+                            <a style="text-decoration: none"href="/pitScout/drivers/drivers.html"><button id="next-button">Next: Drivers</button></a>
                         </div>
                     
                     </div>
-       
-            </div>
 
-            <!-- =================================================== AUTO QUESTIONS ==========================================================-->
+        <!-- =================================================== AUTO QUESTIONS ==========================================================
 
 
-            <div class="form second">
+                    <div class="form third">
 
-                <div class="robot">
+                        <div class="robot">
 
-                <span class ="title"> <h3>Auto</h3> </span>
-                
-                <!--
-                <div class="team-number">
-                    <label for="numero_equipo">Número del Equipo:</label>
-                    <input type="number" id="numero_equipo" name="numero_equipo">
-                </div>
-                -<div class="fields tipo-chasis"> -->
-                
-                    <div class="fields">    
-                
-                    
-                        <div class="input-field"> 
-                            <label class="autoQuestion" for="scoringSelect">Scoring</label>
-                            <select type="select"  id="tipo-de-chasis" name="tipoDeChasis">
-
-                                <option >Select where the robot scores</option>
-                
-                                <option value="Amp">Amp</option>
-                                <option value="Speaker">Speaker</option>
-                                <option value="Both">Both</option>
-
-                            </select>
+                        <span class ="title"> <h3>Auto</h3> </span>
+                        
+                        
+                        <div class="team-number">
+                            <label for="numero_equipo">Número del Equipo:</label>
+                            <input type="number" id="numero_equipo" name="numero_equipo">
                         </div>
+                        -<div class="fields tipo-chasis"> 
+                        
+                            <div class="fields">    
+                        
+                            
+                                <div class="input-field"> 
+                                    <label class="autoQuestion" for="scoringSelect">Scoring</label>
+                                    <select type="select"  id="tipo-de-chasis" name="tipoDeChasis">
 
-                
-                        <div class="input-field">
-                            <label class="autoQuestion" for="intakesFromSelect">Intaking</label>
+                                        <option >Select where the robot scores</option>
+                        
+                                        <option value="Amp">Amp</option>
+                                        <option value="Speaker">Speaker</option>
+                                        <option value="Both">Both</option>
 
-                            <select type="select"  id="intakesFromSelect" required>
-
-                                <option >Select where the robot intakes from</option>
-                                <option value="Wing Note">Wing Note</option>
-                                <option value="Central Note">Central Note</option>
-                                <option value="None">None</option>
-
-
-
-                        </div>
-
-                        <div class="input-field">
-                            <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
-                            <select type="select"  id="leavesSelect" required>
-
-                                <option >Select option </option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-
-                            </select>
-                           
-                        </div>
+                                    </select>
+                                </div>
 
                         
+                                <div class="input-field">
+                                    <label class="autoQuestion" for="intakesFromSelect">Intaking</label>
 
-                        <div class="input-field">
-                            <label class="autoQuestion" for="centerLineSelect">Do they cross the central line?</label>
+                                    <select type="select"  id="intakesFromSelect" required>
 
-                            <select type="select"  id="centerLineSelect" required>
-
-                                <option >Select option </option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-
-
-                            </select>
-                        </div>
-                    
-                        <div class="input-field">
-                            <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
-                            <select type="select"  id="leavesSelect" required>
-
-                                <option >Select option </option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
+                                        <option >Select where the robot intakes from</option>
+                                        <option value="Wing Note">Wing Note</option>
+                                        <option value="Central Note">Central Note</option>
+                                        <option value="None">None</option>
 
 
-                            </select>
-                        </div>
 
-                        <div class="input-field">
-                            <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
-                            <select type="select"  id="leavesSelect" required>
+                                </div>
 
-                                <option >Select option </option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
+                                <div class="input-field">
+                                    <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
+                                    <select type="select"  id="leavesSelect" required>
+
+                                        <option >Select option </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+
+                                    </select>
+                                
+                                </div>
+
+                                
+
+                                <div class="input-field">
+                                    <label class="autoQuestion" for="centerLineSelect">Do they cross the central line?</label>
+
+                                    <select type="select"  id="centerLineSelect" required>
+
+                                        <option >Select option </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
 
 
-                            </select>
-                        </div>
+                                    </select>
+                                </div>
+                            
+                                <div class="input-field">
+                                    <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
+                                    <select type="select"  id="leavesSelect" required>
 
-                        <div class="input-field">
-                            <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
-                            <select type="select"  id="leavesSelect" required>
-
-                                <option >Select option </option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
+                                        <option >Select option </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
 
 
-                            </select>
-                        </div>
-                    
+                                    </select>
+                                </div>
 
+                                <div class="input-field">
+                                    <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
+                                    <select type="select"  id="leavesSelect" required>
+
+                                        <option >Select option </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+
+
+                                    </select>
+                                </div>
+
+                                <div class="input-field">
+                                    <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
+                                    <select type="select"  id="leavesSelect" required>
+
+                                        <option >Select option </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+
+
+                                    </select>
+                                </div>
+                            
+
+                            </div>
+            
                     </div>
-       
-            </div>
-    </form>
 
-    <div class="buttons">
-        <a href="/pitScout/homePage/pitScouting.html"><button id="back-button">Back: General</button></a>
-        <a href="/pitScout/drivers/drivers.html"><button id="next-button">Next: Drivers</button></a>
-    </div>
+                -->
+            
+            <!-- =========================================== DRIVERS ======================================================
+                    <div class="form third">
+
+                        <div class="drivers" id="driversSection">
+
+                        <span class ="title"> <h3>Drivers</h3> </span>
+                        
+                        
+                        <div class="team-number">
+                            <label for="numero_equipo">Número del Equipo:</label>
+                            <input type="number" id="numero_equipo" name="numero_equipo">
+                        </div>
+                        -<div class="fields tipo-chasis"> 
+                        
+                            <div class="fields">    
+                        
+                            
+                                <div class="input-field preference-options"> 
+                                    <label for="preference-driver-select" class="preference-label">Preference</label>
+                                    <select type="select"  id="preference-driver-select" required>
+                    
+                                        <option >Select Drivers preference</option>
+                                        <option value="attack">Attack</option>
+                                        <option value="defense">Defense</option>
+                                        <option value="feeder">Feeder</option>
+                    
+                                    </select>
+                    
+                                </div>
+
+                        
+                                <div class="input-field practice-time">
+                                    <label class="radio-group" for="practice-time-select">Practice Time</label>
+                                    <select type="select"  id="practice-time-select" required>
+                        
+                                        <option >Select practice time (hours per week)</option>
+                                        <option value="0-5">0-5</option>
+                                        <option value="6-10">6-10</option>
+                                        <option value="11-15">11-15</option>
+                                        <option value="16+">16+</option>
+                        
+                                    </select>
+
+                                </div>
+
+                                <div class="input-field">
+                                    <label class="sectionQuestion" for="driversFirstSeasonSelect">Is this the driver's first season?</label>
+                        
+                                    <select type="select" class="sectionQuestion" id="driversFirstSeasonSelect" required>
+
+                                        <option >Select option</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        
+                                    </select>
+                                
+                                </div>
+
+                                
+
+                                <div class="input-field">
+                                    <label class="sectionQuestion" for="hpPracticeTimeSelect">HP Practice Time</label>
+                        
+                                    <select type="select" class="sectionQuestion" id="hpFirstSeasonSelect" required>
+
+                                        <option>Select practice time (hours per week)</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        
+                                    </select>
+
+                                </div>
+                            
+                            </div>
+            
+                    </div>
+            </form>
+
+        <div class="buttons">
+        <div class="backBtn">
+            <a style="text-decoration: none"/pitScout/homePage/pitScouting.html"><button id="back-button">Back: General</button></a>
+        </div>
+        <div class="nextBtn">
+            <a style="text-decoration: none"href="/pitScout/drivers/drivers.html"><button id="next-button">Next: Drivers</button></a>
+        </div>
     
     </div>
+-->
+    
+    </div>
+
+   
+
+    <script src="/pit/js_pit.js"></script>
 
 </body>
 </html>

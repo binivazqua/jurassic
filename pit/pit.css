@@ -58,13 +58,24 @@ div .team-number {
 .container form {
     /*background-color: bisque;*/
     position: relative;
+    margin-top: 16px;
     min-height: 490px;
     justify-content: center;
+    background-color: white;
 }
 
+/*
 .container form .mobility {
-    margin-top: 10px;
+    margin-top: 10px;*/
+
+
+
+.container form .form {
+    position: absolute;
+    /*background-color: white;*/
+    transition: 0.3s ease;
 }
+
 
 .container form .title {
     display: block;
