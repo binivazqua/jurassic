@@ -55,6 +55,11 @@ div .team-number {
     padding-bottom: 3rem;
 }
 
+
+
+
+/* ==================== FORM TRANSITION ================== */
+
 .container form {
     /*background-color: bisque;*/
     position: relative;
@@ -64,19 +69,21 @@ div .team-number {
     background-color: white;
 }
 
-/*
-.container form .mobility {
-    margin-top: 10px;*/
-
-
-
 .container form .form {
     position: absolute;
-    /*background-color: white;*/
-    transition: 0.3s ease;
+    background-color: white;
+    /*transition: 0.3s ease;*/
 }
 
+.container form .form.second {
+    opacity: 0;
+    pointer-events: none;
+}
 
+.container form .form.second {
+    opacity: 1;
+    pointer-events: auto;
+}
 .container form .title {
     display: block;
     margin-top: 8px;
