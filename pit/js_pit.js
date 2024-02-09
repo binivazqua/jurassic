@@ -4,11 +4,12 @@ const form = document.querySelector("form"),
     allInput = document.querySelectorAll(".first input");
  
 nextBtn.addEventListener("click", ()=> {
-    allInput.forEach(input =>{
-        if(input.value != "" ) {
-            form.classlist.add('secActive');
+    allInput.forEach(input => {
+        if(input.value != " ") {
+            form.classList.add('secActive');
         } else {
             form.classList.remove('secActive');
+            alert("ayuda")
         }
     })
 })

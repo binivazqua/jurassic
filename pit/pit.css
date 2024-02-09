@@ -73,33 +73,23 @@ div .team-number {
     position: absolute;
     background-color: white;
     /*transition: 0.3s ease;*/
+
 }
-
-
 .container form .form.second {
     opacity: 0;
     pointer-events: none;
 }
 
-.container form .form.second {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.container form .form.second {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 form.secActive .form.second{
     opacity: 1;
     pointer-events: auto;
 }
 
-form.secActive .form.second{
-    opacity: 1;
-    pointer-events: auto;
+form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
 }
+
 .container form .title {
     display: block;
     margin-top: 8px;
@@ -146,7 +136,7 @@ label {
 
 }
 
-.container button {
+.container form button, .backBtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,17 +149,22 @@ label {
     border-radius: 5px;
     margin: 0 3rem;
     background-color: #ee2737;
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
 
-button:hover{
+form button:hover{
     background-color: black;
 }
 
 
-div .buttons {
+form .buttons {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+form .buttons button, .backBtn{
+    margin-right: 2rem;
 }
 
 /* =============== radio groups ======================= */
