@@ -1,7 +1,7 @@
 const form = document.querySelector("form"),
     nextBtn = document.querySelector(".nextBtn"),
     backBtn = document.querySelector(".backBtn"),
-    allInput = document.querySelector(".first input");
+    allInput = document.querySelectorAll(".first input");
  
 nextBtn.addEventListener("click", ()=> {
     allInput.forEach(input =>{

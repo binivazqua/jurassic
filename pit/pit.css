@@ -86,6 +86,20 @@ div .team-number {
     pointer-events: auto;
 }
 
+.container form .form.second {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+}
 .container form .title {
     display: block;
     margin-top: 8px;
