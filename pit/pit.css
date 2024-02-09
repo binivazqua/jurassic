@@ -54,7 +54,9 @@ div .team-number {
     font-weight: 400;
 }
 
-
+.team-number {
+    margin: 2rem;
+}
 
 
 /* ==================== FORM TRANSITION ================== */
@@ -68,13 +70,13 @@ div .team-number {
     background-color: white;
 }
 
-
+/*
 .container form .form {
     position: absolute;
     background-color: white;
     /*transition: 0.3s ease;*/
 
-}
+/*
 .container form .form.second {
     opacity: 0;
     pointer-events: none;
@@ -89,7 +91,7 @@ form.secActive .form.first{
     opacity: 0;
     pointer-events: none;
 }
-
+*/
 .container form .title {
     display: block;
     margin-top: 8px;
@@ -174,21 +176,22 @@ forms .input-field .radio-group {
     flex-direction: column;
 }
 
-/*
+
 select {
     display: inline-block;
-    background-color: rgb(117, 13, 13);
-    color: #fff;
+    /*background-color: rgb(117, 13, 13);*/
+    /*color: #fff;*/
     border: 2px solid #dd1212;
     border-radius: 10px;
-    width: 200px;
+    max-width: 30rem;
+    min-width: 10rem;
     height: 35px;
     font-size: 16px;
-    box-shadow:0 0 30px 4px rgba(0, 0, 0, 0.652);
+    /*box-shadow:0 0 30px 4px rgba(0, 0, 0, 0.652);*/
     margin: 10px;
 
 }
-
+/*
 select:hover {
     background-color: rgb(212, 47, 47);
     color: #0c0909;
@@ -251,4 +254,44 @@ select:hover {
 
 .radio-group {
     margin-top: 10px;
+}
+
+/* ================ MEDIA QUERIES ====================== */
+
+@media (max-width: 750px){
+    .container {
+        max-width: 500px;
+    }
+    .container form{
+        overflow-y: scroll;
+        
+        /*margin: 5rem;*/
+    }
+    form .fields .input-field{
+        display: flex;
+        flex:  1;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        margin: 1rem 0;
+        width: auto;
+        text-align: left;
+        
+       
+    }
+    select {
+        max-width: 15rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        padding: 0;
+
+
+        
+    }
+    label {
+        
+        width: 8rem;
+        text-wrap: nowrap;
+    }
+   
+    
 }
