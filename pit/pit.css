@@ -52,7 +52,6 @@ div .team-number {
 .container header p {
     font-size: 1.5rem;
     font-weight: 400;
-    padding-bottom: 3rem;
 }
 
 
@@ -69,14 +68,14 @@ div .team-number {
     background-color: white;
 }
 
-/*
+
 .container form .form {
     position: absolute;
     background-color: white;
     /*transition: 0.3s ease;*/
+}
 
 
-/*
 .container form .form.second {
     opacity: 0;
     pointer-events: none;
@@ -86,7 +85,7 @@ div .team-number {
     opacity: 1;
     pointer-events: auto;
 }
-*/
+
 .container form .title {
     display: block;
     margin-top: 8px;
