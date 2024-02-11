@@ -258,7 +258,7 @@ select:hover {
 
 /* ================ MEDIA QUERIES ====================== */
 
-@media (max-width: 750px){
+@media screen and (max-width: 750px){
     .container {
         max-width: 500px;
     }
@@ -295,3 +295,5 @@ select:hover {
    
     
 }
+
+
