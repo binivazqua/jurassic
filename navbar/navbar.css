@@ -156,7 +156,7 @@ img {
 }
 
 .nav__logo {
-    color: var(--text-col);
+    color: white;
     font-size: var(--h1-font-size);
     font-family: 'Industry';
     text-transform: uppercase;
@@ -179,6 +179,7 @@ img {
     font-weight: 400;
 }
 
+
 .nav__list {
     justify-content: space-around;
 }
@@ -194,9 +195,10 @@ img {
 
 
 /* ====================== ACTIVE LINK  ===================== */
+
 .active-link{
     position: relative;
-    color: #ee2737;
+    color: red;
     transition: 0.3s;
 }
 
@@ -258,3 +260,6 @@ img {
         margin-top: 2rem;
     }
 }
+
+/* ============= PIT PART ++++++++++++++++++ */
+
