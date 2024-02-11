@@ -154,7 +154,7 @@ label {
     transition: all 0.3s linear;
     cursor: pointer;
 }
-
+/*
 form button:hover{
     background-color: black;
 }
@@ -168,6 +168,22 @@ form .buttons {
 form .buttons button, .backBtn{
     margin-right: 2rem;
 }
+*/
+
+form button:hover{
+    background-color: black;
+}
+
+div .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -4rem;
+}
+
+
+
+
 
 /* =============== radio groups ======================= */
 
@@ -272,11 +288,15 @@ select:hover {
         flex:  1;
         flex-direction: row;
         flex-wrap: no-wrap;
-        margin: 1rem 0;
+        /*margin: 1rem 0;*/
         width: auto;
         text-align: left;
         
        
+    }
+
+    .container form .fields {
+        margin-bottom: 0;
     }
     select {
         max-width: 15rem;
@@ -292,8 +312,23 @@ select:hover {
         width: 8rem;
         text-wrap: nowrap;
     }
+
+    .container form button {
+        max-width: 8rem;
+    }
+
+    div .buttons {
+        align-items: center;
+        margin-left: -2rem;
+    }
    
     
+}
+
+@media screen and (min-width: 750px) and (max-width: 1050px){
+    .container {
+        max-width: 700px;
+    }
 }
 
 
