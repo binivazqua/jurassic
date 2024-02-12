@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="navbar.css" rel= "stylesheet">
+    <!-- TRYING TO MERGE BOTH PROJECTS -->
+    <!--
+        <link href="/pit/pit.css" rel="stylesheet">
+    -->
+    <link href="/navbar/pit-merge.css" rel="stylesheet">
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -74,129 +79,137 @@
         <!--================= PIT SCOUT ====================-->
         <section class="container section section__height" id="pit">
             <h2 class="section__title">Pit Scout</h2>
-            <div class="container">
+            
+                <!-- ADD ANOTHER CONTAINER TO CHANGE THE OVERALL BODY-->
+                <!-- CHANGE 'container' for 'pit-container'-->
+                <div class="body">
+                    <div class="pit-container">
 
-        <header>
-            <h1>Pit Scouting: Auto</h1>
-            <p> Please provide the next info of the team on the autonomous period</p>
+                        <header>
+                            <h1>Pit Scouting: Auto</h1>
+                            <p> Please provide the next info of the team on the autonomous period</p>
 
-        </header>
-   
-            <form action="#">       
+                        </header>
                 
-
-                     
-                    <div class="team-number">
-                            <label for="numero_equipo">Número del Equipo:</label>
-                            <input type="number" id="numero_equipo" name="numero_equipo">
-                    </div>
+                            <form action="#">       
                                 
-                    
-                    <div class="form first">
-                        <div class="robot">
 
-                                <span class ="title"> <h3>Robot</h3> </span>
-
-                                <!--
+                                    
                                     <div class="team-number">
-                                        <label for="numero_equipo">Número del Equipo:</label>
-                                        <input type="number" id="numero_equipo" name="numero_equipo">
-                                </div>
-                                -->
-
-                                <div class="fields">    
-                            
+                                            <label for="numero_equipo">Número del Equipo:</label>
+                                            <input type="number" id="numero_equipo" name="numero_equipo">
+                                    </div>
+                                                
                                     
-                                        <div class="input-field"> 
-                                            <label class="radio-group" for="tipo-de-chasis">Chassis type</label>
-                                            <select type="select"  id="tipo-de-chasis" name="tipoDeChasis" >
+                                    <div class="form first">
+                                        <div class="robot">
 
-                                                <option >Select Chassis</option>
-                                                <option value="Tank">Tanque</option>
-                                                <option value="Swerve">Swerve</option>
-                                                <option value="Mecanum">Mecanum</option>
-                                                <option value="Dragonfly">Dragonfly</option>
+                                                <span class ="title"> <h3>Robot</h3> </span>
 
-                                            </select>
-                                        </div>
+                                                <!--
+                                                    <div class="team-number">
+                                                        <label for="numero_equipo">Número del Equipo:</label>
+                                                        <input type="number" id="numero_equipo" name="numero_equipo">
+                                                </div>
+                                                -->
 
-                                
-                                        <div class="input-field">
-                                            <label for="chasisMotorsSelect" class="radio-group">Motor(s) used on chasis</label>
-                                            <select type="select" name="motorsChassisSelect" id="motorsChassisSelect" >
-
-                                                <option>Select option</option>
-                                                <option value="Neo">Neo</option>
-                                                <option value="Neo 550">Neo 550</option>
-                                                <option value="Neo Vortex">Neo Vortex</option>
-                                                <option value="Kraken">Kraken</option>
-                                                <option value="Falcon">Falcon</option>
-                                                <option value="Cim">Cim</option>
-
-                                            </select>
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="robotWeightSelect" class="radio-group">Robot's weight</label>
-                                            <select type="select" name="robotWeightSelect" id="robotWeightSelect" >
-
-                                                <option>Select option</option>
-                                                <option value="X">X</option>
-                                                <option value="X">X</option>
-                                                <option value="X">X</option>
-
-                                            </select>
-                                        </div>
-
-                                        
-
-                                        <div class="input-field">
-                                            <label class="radio-group" for="wheel-type">Wheel type</label>
-                                            <select type="select"  id="wheel-type" name="tipoDeLlanta">
-
-                                                <option >Select Wheel</option>
-                                                <option value="omni">Omni</option>
-                                                <option value="colson">Colson</option>
-                                                <option value="kop">Kop</option>
-                                                <option value="plaction">Plaction</option>
-                                                <option value="pneumatic">Pneumatic</option>
-                                                <option value="mecanum">Mecanum</option>
-                                                <option value="other">Other:</option>
+                                                <div class="fields">    
                                             
-                                            </select>
-                                        </div>
+                                                    
+                                                        <div class="input-field"> 
+                                                            <label class="radio-group" for="tipo-de-chasis">Chassis type</label>
+                                                            <select type="select"  id="tipo-de-chasis" name="tipoDeChasis" >
+
+                                                                <option >Select Chassis</option>
+                                                                <option value="Tank">Tanque</option>
+                                                                <option value="Swerve">Swerve</option>
+                                                                <option value="Mecanum">Mecanum</option>
+                                                                <option value="Dragonfly">Dragonfly</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                
+                                                        <div class="input-field">
+                                                            <label for="chasisMotorsSelect" class="radio-group">Motor(s) used on chasis</label>
+                                                            <select type="select" name="motorsChassisSelect" id="motorsChassisSelect" >
+
+                                                                <option>Select option</option>
+                                                                <option value="Neo">Neo</option>
+                                                                <option value="Neo 550">Neo 550</option>
+                                                                <option value="Neo Vortex">Neo Vortex</option>
+                                                                <option value="Kraken">Kraken</option>
+                                                                <option value="Falcon">Falcon</option>
+                                                                <option value="Cim">Cim</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="input-field">
+                                                            <label for="robotWeightSelect" class="radio-group">Robot's weight</label>
+                                                            <select type="select" name="robotWeightSelect" id="robotWeightSelect" >
+
+                                                                <option>Select option</option>
+                                                                <option value="X">X</option>
+                                                                <option value="X">X</option>
+                                                                <option value="X">X</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                        
+
+                                                        <div class="input-field">
+                                                            <label class="radio-group" for="wheel-type">Wheel type</label>
+                                                            <select type="select"  id="wheel-type" name="tipoDeLlanta">
+
+                                                                <option >Select Wheel</option>
+                                                                <option value="omni">Omni</option>
+                                                                <option value="colson">Colson</option>
+                                                                <option value="kop">Kop</option>
+                                                                <option value="plaction">Plaction</option>
+                                                                <option value="pneumatic">Pneumatic</option>
+                                                                <option value="mecanum">Mecanum</option>
+                                                                <option value="other">Other:</option>
+                                                            
+                                                            </select>
+                                                        </div>
+                                                    
+                                                        <div class="input-field">
+                                                                <label for="robotMeasureSelect" class="radio-group">Robot Measures</label>
+                                                                <select name="robotMeasureSelect" id="robotMeasureSelect">
+
+                                                                    <option>Select option</option>
+                                                                    <option value="X">X</option>
+                                                                    <option value="X">X</option>
+                                                                    <option value="X">X</option>
+
+                                                                </select>
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="buttons">
+                                                    <a href="" style="text-decoration: none"><button id="back-button">Back: General</button></a>
+                                                    <a href="" style="text-decoration: none;"><button id="next-button">Next: Drivers</button></a>
+                                                </div>
+                                                <!--
+                                            <button class="nextBtn">
+                                                    <span class="btnText">Next</span>
+                                        
+                                            </button>
+                                            <button class="nextBtn">
+                                                    <span class="btnText">Next</span>
                                     
-                                        <div class="input-field">
-                                                <label for="robotMeasureSelect" class="radio-group">Robot Measures</label>
-                                                <select name="robotMeasureSelect" id="robotMeasureSelect">
-
-                                                    <option>Select option</option>
-                                                    <option value="X">X</option>
-                                                    <option value="X">X</option>
-                                                    <option value="X">X</option>
-
-                                                </select>
+                                                </button>
+                                            -->
+                            
                                         </div>
-                                </div>
-                                
-                                <div class="buttons">
-                                    <a href="" style="text-decoration: none"><button id="back-button">Back: General</button></a>
-                                    <a href="" style="text-decoration: none;"><button id="next-button">Next: Drivers</button></a>
-                                </div>
-                                <!--
-                               <button class="nextBtn">
-                                    <span class="btnText">Next</span>
-                        
-                               </button>
-                               <button class="nextBtn">
-                                    <span class="btnText">Next</span>
-                    
-                                </button>
-                            -->
-            
-                        </div>
-            
+                            
+                            
+                                    </div>
+                            </form>
                     </div>
+                </div>
 
         </section>
 
