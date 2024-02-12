@@ -196,7 +196,7 @@ img {
 
 /* ====================== ACTIVE LINK  ===================== */
 
-.active-link{
+.nav__menu .active-link{
     position: relative;
     color: red;
     transition: 0.3s;
