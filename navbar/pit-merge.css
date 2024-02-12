@@ -33,7 +33,7 @@ h1 {
 /* =============== FORM CONTAINER ================== */
 
 .pit-container {
-    position: relative;
+    /*position: absolute !important;;*/
     background-color: white;
     max-width: 900px;
     width: 100%;

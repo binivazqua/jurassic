@@ -26,6 +26,7 @@ body:not(div .body){
     color: var(--text-col);
     align-content: center;
     text-align: center;
+
     
 }
 
