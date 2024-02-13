@@ -25,6 +25,7 @@ h3,
 h1 {
     font-family: 'Industry';
     text-transform: uppercase;
+    color: black;
 }
 
 h1 {
@@ -38,8 +39,9 @@ h1 {
     max-width: 900px;
     width: 100%;
     padding: 3rem;
-    margin: 0 1rem;
-    border-radius: 1rem;
+    margin: auto;
+    border-radius: 3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }
 
@@ -55,6 +57,7 @@ div .team-number {
 .pit-container header p {
     font-size: 1.5rem;
     font-weight: 400;
+    color: black;
 }
 
 .team-number {
@@ -71,6 +74,7 @@ div .team-number {
     min-height: 490px;
     justify-content: center;
     background-color: white;
+    margin: auto;
 }
 
 /*
