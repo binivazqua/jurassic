@@ -70,13 +70,13 @@ div .team-number {
     background-color: white;
 }
 
-/*
+
 .container form .form {
     position: absolute;
     background-color: white;
     /*transition: 0.3s ease;*/
+}
 
-/*
 .container form .form.second {
     opacity: 0;
     pointer-events: none;
@@ -91,7 +91,7 @@ form.secActive .form.first{
     opacity: 0;
     pointer-events: none;
 }
-*/
+
 .container form .title {
     display: block;
     margin-top: 8px;
@@ -178,7 +178,7 @@ div .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -4rem;
+    position: relative;
 }
 
 
@@ -187,7 +187,7 @@ div .buttons {
 
 /* =============== radio groups ======================= */
 
-forms .input-field .radio-group {
+form .input-field .radio-group {
     display: inline-flex;
     flex-direction: column;
 }

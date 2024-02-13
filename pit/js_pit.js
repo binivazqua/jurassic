@@ -9,7 +9,7 @@ nextBtn.addEventListener("click", ()=> {
             form.classList.add('secActive');
         } else {
             form.classList.remove('secActive');
-            alert("ayuda")
+          
         }
     })
 })
