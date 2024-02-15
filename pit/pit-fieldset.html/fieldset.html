@@ -177,9 +177,10 @@
                         </div>
 
                         <div class="buttons">
-                            <div class="backBtn">
-                                <span class="btnText" onclick="prevSection(0)">Back</span>
-                            </div>
+                            
+                            <button type="button" class="nextBtn" onclick="nextSection(2)">
+                                <span class="btnText" onclick="prevSection(1)">Back</span>
+                            </button>
                             <button type="button" class="nextBtn" onclick="nextSection(2)">
                                 <span class="btnText">Next</span>
                             </button>
@@ -191,19 +192,21 @@
     </div>
 
     <script>
-        function nextSection(currentSection) {
-            if (currentSection < document.querySelectorAll('fieldset').length - 1) {
-                document.querySelectorAll('fieldset')[currentSection].classList.add('hidden');
-                document.querySelectorAll('fieldset')[currentSection + 1].classList.remove('hidden');
-            }
+    function nextSection(currentSection) {
+        const fieldsets = document.querySelectorAll('.container form fieldset');
+        if (currentSection < fieldsets.length - 1) {
+            fieldsets[currentSection].style.display = 'none';
+            fieldsets[currentSection + 1].style.display = 'block';
         }
+    }
     
-        function prevSection(currentSection) {
-            if (currentSection > 0) {
-                document.querySelectorAll('fieldset')[currentSection].classList.add('hidden');
-                document.querySelectorAll('fieldset')[currentSection - 1].classList.remove('hidden');
-            }
+    function prevSection(currentSection) {
+        const fieldsets = document.querySelectorAll('.container form fieldset');
+        if (currentSection >= 0) {
+            fieldsets[currentSection].style.display = 'none';
+            fieldsets[currentSection - 1].style.display = 'block';
         }
+    }
     </script>
     
     
