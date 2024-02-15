@@ -240,6 +240,8 @@ img {
     .nav__name {
         display: none;
     }
+
+    
 }
 
 /* large phones */
@@ -247,6 +249,10 @@ img {
     .nav__list {
         justify-content: center;
         column-gap: 3rem;
+    }
+
+    input[type=number]{
+        max-width: 10rem;
     }
 }
 
@@ -268,6 +274,8 @@ img {
     .nav__img {
         margin-top: 2rem;
     }
+
+    
 }
 
 /* ============= PIT PART ++++++++++++++++++ */
