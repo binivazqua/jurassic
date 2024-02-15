@@ -39,3 +39,20 @@ function scrollTop(){
 window.addEventListener('scroll', scrollTop)
 
 /* GH: easy-code */
+
+/* ================== TRANSITION ================================= */
+function nextSection(currentSection) {
+    const fieldsets = document.querySelectorAll('.container form fieldset');
+    if (currentSection < fieldsets.length - 1) {
+        fieldsets[currentSection].style.display = 'none';
+        fieldsets[currentSection + 1].style.display = 'block';
+    }
+}
+
+function prevSection(currentSection) {
+    const fieldsets = document.querySelectorAll('.container form fieldset');
+    if (currentSection >= 0) {
+        fieldsets[currentSection].style.display = 'none';
+        fieldsets[currentSection - 1].style.display = 'block';
+    }
+}
