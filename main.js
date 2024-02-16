@@ -40,7 +40,10 @@ window.addEventListener('scroll', scrollTop)
 
 /* GH: easy-code */
 
+
+
 /* ================== TRANSITION ================================= */
+
 function nextSection(currentSection) {
     const fieldsets = document.querySelectorAll('.container form fieldset');
     if (currentSection < fieldsets.length - 1) {
@@ -56,3 +59,5 @@ function prevSection(currentSection) {
         fieldsets[currentSection - 1].style.display = 'block';
     }
 }
+
+

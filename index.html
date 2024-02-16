@@ -293,6 +293,96 @@
                                     </div>
                                 </fieldset>
 
+                                <!-- TEST FIELDSET -->
+
+                                <fieldset class="hidden">
+                                    <div class="form third">
+                    
+                                        <div class="test">
+                    
+                                            <span class="title">
+                                                <h3>Aiuda</h3>
+                                            </span>
+                                            <div class="fields">
+                                                <div class="input-field">
+                                                    <div class="radio-group">
+                                                        <label>Language</label>
+                                                        <div class="radio-language-options">
+                                                            <input type="radio" id="java" name="progInput" class="programming-language-input"
+                                                                value="java">
+                                                            <label for="java"><img src="/resources/progra/bxl-java.svg"
+                                                                    class="programming-language-label" id="java-logo"></label>
+                                                            <input type="radio" id="cpp" name="progInput" class="programming-language-input"
+                                                                value="c++">
+                                                            <label for="cpp"><img src="/resources/progra/bxl-c-plus-plus.svg"
+                                                                    class="programming-language-label" height="45px" width="auto"
+                                                                    id="cpp-logo" /></label>
+                                                            <input type="radio" id="python" name="progInput" class="programming-language-input"
+                                                                value="python">
+                                                            <label for="python"><img src="/resources/progra/bxl-python.svg"
+                                                                    class="programming-language-label" height="45px" width="auto"
+                                                                    id="python-logo" /></label>
+                                                            <input type="radio" id="labview" name="progInput" class="programming-language-input"
+                                                                value="labview">
+                                                            <label for="labview"><img src="/resources/progra/bxl-play-store.svg"
+                                                                    class="programming-language-label" height="45px" width="auto"
+                                                                    id="labview-logo"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="input-field has-vision">
+                                                    <label for="hasVisionSelect" class="radio-group">Do they have vision?</label>
+                                                    <select type="select" name="hasVisionSelect" id="hasVisionSelect">
+                                                        <option>Select option</option>
+                                                        <option value="The DON'T have vision">No</option>
+                                                        <option value="They have vision">Yes</option>
+                                                    </select>
+                                                </div>
+                    
+                                                <div class="input-field visionProcess">
+                                                    <label for="visionProcessSelect" class="radio-group">How do they process their vision?</label>
+                                                    <select type="select" name="visionProcessSelect" id="visionProcessSelect">
+                                                        <option>Select option</option>
+                                                        <option value="The DON'T have vision">The don't have vision</option>
+                                                        <option value="Limelight">Limelight</option>
+                                                        <option value="Raspberry">Raspberry</option>
+                                                        <option value="Google Coral">Google Coral</option>
+                                                        <option value="Orange Pi">Orange Pi</option>
+                                                        <option value="Webcam alone">Only webcam</option>
+                                                    </select>
+                                                </div>
+                    
+                                                <div class="input-field">
+                                                    <label for="numberOfCamerasInput">Number of cameras in robot:</label>
+                                                    <input type="number" id="numberOfCamerasInput" name="numberOfCamerasInput">
+                                                </div>
+                    
+                                                <div class="input-field">
+                                                    <label class="autoQuestion" for="leavesSelect">Does the robot leave starting zone?</label>
+                                                    <select type="select" id="leavesSelect" required>
+                                                        <option>Select option </option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                    
+                                            
+
+                                            <div class="buttons">
+                            
+                                                <button type="button" class="backBtn" onclick="prevSection(3)">
+                                                    <span class="btnText" onclick="prevSection(3)">Back</span>
+                                                </button>
+                                                <button type="button" class="nextBtn" onclick="nextSection(3)">
+                                                    <span class="btnText">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
 
                             </form>
                     </div>
