@@ -182,10 +182,10 @@ form button:hover{
 }
 
 div .buttons {
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -4rem;
 }
 
 
@@ -310,8 +310,6 @@ select:hover {
         margin-right: 1rem;
         margin-left: 2rem;
         padding: 0;
-
-
         
     }
     label {
@@ -329,6 +327,9 @@ select:hover {
         margin-left: -2rem;
     }
    
+    input[type=number]{
+        margin-left: 2rem;
+    }
     
 }
 
