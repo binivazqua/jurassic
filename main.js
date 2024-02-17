@@ -44,19 +44,38 @@ window.addEventListener('scroll', scrollTop)
 
 /* ================== TRANSITION ================================= */
 
+/*
 function nextSection(currentSection) {
-    const fieldsets = document.querySelectorAll('.container form fieldset');
-    if (currentSection < fieldsets.length - 1) {
-        fieldsets[currentSection].style.display = 'none';
-        fieldsets[currentSection + 1].style.display = 'block';
+    const fieldsets = document.getElementsByClassName('displayable-section');
+    let nextSec = currentSection + 1;
+    if (currentSection < nextSec) {
+        fieldsets[currentSection].classList.add("hidden")
+        fieldsets[nextSec].classList.remove("hidden")
+        console.log(currentSection);
+        console.log(nextSec);
+    }
+
+}
+*/
+
+function nextSection(currentSection) {
+    const fieldsets = document.querySelectorAll('.displayable-section');
+    let nextSec = currentSection + 1;
+
+    if (nextSec < fieldsets.length && fieldsets[currentSection] && fieldsets[nextSec]) {
+        fieldsets[currentSection].classList.add("hidden");
+        fieldsets[nextSec].classList.remove("hidden");
+        console.log(currentSection);
+        console.log(nextSec);
     }
 }
 
 function prevSection(currentSection) {
-    const fieldsets = document.querySelectorAll('.container form fieldset');
-    if (currentSection >= 0) {
-        fieldsets[currentSection].style.display = 'none';
-        fieldsets[currentSection - 1].style.display = 'block';
+    const fieldsets = document.getElementsByClassName('displayable-section');
+    if (currentSection > 0) {
+        fieldsets[currentSection].classList.add("hidden")
+        fieldsets[currentSection - 1].classList.remove("hidden")
+        console.log(fieldsets);
     }
 }
 
