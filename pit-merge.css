@@ -33,7 +33,7 @@ h1 {
 }
 /* =============== FORM CONTAINER ================== */
 
-.pit-container {
+.section-container {
     /*position: absolute !important;;*/
     background-color: white;
     max-width: 900px;
@@ -48,13 +48,13 @@ h1 {
 div .team-number {
     text-align: center;
 }
-.pit-container header > h1 {
+.section-container header > h1 {
     font-size: 3rem;
     font-weight: 600;
     padding-bottom: 1rem;
 }
 
-.pit-container header p {
+.section-container header p {
     font-size: 1.5rem;
     font-weight: 400;
     color: black;
@@ -67,7 +67,7 @@ div .team-number {
 
 /* ==================== FORM TRANSITION ================== */
 
-.pit-container form {
+.section-container form {
     /*background-color: bisque;*/
     
     margin-top: 16px;
@@ -99,7 +99,7 @@ form.secActive .form.first{
     pointer-events: none;
 }
 */
-.pit-container form .title {
+.section-container form .title {
     display: block;
     margin-top: 8px;
     font-size: 1.5rem;
@@ -107,7 +107,7 @@ form.secActive .form.first{
     margin: 0.25 rem;
 }
 
-.pit-container form .fields {
+.section-container form .fields {
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -144,7 +144,7 @@ label {
 
 }
 
-.pit-container form button, .backBtn {
+.section-container form button, .backBtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,10 +284,10 @@ select:hover {
 /* ================ MEDIA QUERIES ====================== */
 
 @media screen and (max-width: 750px){
-    .pit-container {
+    .section-container {
         max-width: 500px;
     }
-    .pit-container form{
+    .section-container form{
         overflow-y: scroll;
         
         /*margin: 5rem;*/
@@ -304,7 +304,7 @@ select:hover {
        
     }
 
-    .pit-container form .fields {
+    .section-container form .fields {
         margin-bottom: 0;
     }
     select {
@@ -320,7 +320,7 @@ select:hover {
         text-wrap: nowrap;
     }
 
-    .pit-container form button {
+    .section-container form button {
         max-width: 8rem;
     }
 
@@ -337,7 +337,7 @@ select:hover {
 }
 
 @media screen and (min-width: 750px) and (max-width: 1050px){
-    .pit-container {
+    .section-container {
         max-width: 700px;
     }
 }

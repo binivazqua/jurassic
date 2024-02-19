@@ -53,6 +53,10 @@ img {
     height: auto;
 }
 
+p {
+    color:black;
+}
+
 /* REUSABLE CLASSES (check later) */
 
 .section {
