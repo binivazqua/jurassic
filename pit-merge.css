@@ -227,6 +227,12 @@ select:hover {
     margin-bottom: 10px;
 }
 */
+
+/* ============= IMAGE INPUTS =============== */
+
+.arena-initial-position img{
+    margin-top: 2rem !important;
+}
 #java {
     border-radius: 50px;
     width: 20px;
