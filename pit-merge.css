@@ -126,7 +126,6 @@ form .fields .input-field {
 input {
     height: 32px;
     margin: 5px 0;
-    width: 15rem;
     border: 1px solid #aaa;
     border-radius: 5px;
     padding: 0 15px;
@@ -200,19 +199,22 @@ forms .input-field .radio-group {
 }
 
 
-select {
+select,
+input[type=number] {
     display: inline-block;
-    /*background-color: rgb(117, 13, 13);*/
-    /*color: #fff;*/
     border: 2px solid #dd1212;
     border-radius: 10px;
     max-width: 30rem;
     min-width: 10rem;
     height: 35px;
     font-size: 16px;
-    /*box-shadow:0 0 30px 4px rgba(0, 0, 0, 0.652);*/
     margin: 10px;
 
+}
+
+input[type=number]{
+    max-width: 30rem;
+    min-width: 10rem;
 }
 /*
 select:hover {
@@ -306,7 +308,7 @@ select:hover {
         margin-bottom: 0;
     }
     select {
-        max-width: 15rem;
+        max-width: 10rem;
         margin-right: 1rem;
         margin-left: 2rem;
         padding: 0;
@@ -329,6 +331,7 @@ select:hover {
    
     input[type=number]{
         margin-left: 2rem;
+        max-width: 10rem;
     }
     
 }

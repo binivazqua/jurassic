@@ -251,9 +251,6 @@ img {
         column-gap: 3rem;
     }
 
-    input[type=number]{
-        max-width: 10rem;
-    }
 }
 
 /* ipads */
