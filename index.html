@@ -77,8 +77,8 @@
             <div class="body">
                 <div class="section-container">
                     <header>
-                        <h1>Auto</h1>
-                        <p> Please provide the next info of the team on the autonomous period</p>
+                        <h1>Match info</h1>
+                        <p> Please provide the next info of the current match</p>
                     </header>
 
                     <form action="#">
@@ -98,42 +98,39 @@
                                     
                                             
                                                 <div class="input-field"> 
-                                                    <label class="radio-group" for="tipo-de-chasis">Chassis type</label>
-                                                    <select type="select"  id="tipo-de-chasis" name="tipoDeChasis" >
+                                                    <label class="radio-group" for="tipo-de-match">Match type</label>
+                                                    <select type="select"  id="tipo-de-match" name="tipoDeMatch" >
 
-                                                        <option >Select Chassis</option>
-                                                        <option value="Tank">Tanque</option>
-                                                        <option value="Swerve">Swerve</option>
-                                                        <option value="Mecanum">Mecanum</option>
-                                                        <option value="Dragonfly">Dragonfly</option>
+                                                        <option >Select</option>
+                                                        <option value="Practice">Practice</option>
+                                                        <option value="Qualy">Qualy</option>
+                                                        <option value="Playoffs">Playoffs</option>
+                
 
                                                     </select>
                                                 </div>
 
                                         
                                                 <div class="input-field">
-                                                    <label for="chasisMotorsSelect" class="radio-group">Motor(s) used on chasis</label>
+                                                    <label for="chasisMotorsSelect" class="radio-group">Alliance Color</label>
                                                     <select type="select" name="motorsChassisSelect" id="motorsChassisSelect" >
 
-                                                        <option>Select option</option>
-                                                        <option value="Neo">Neo</option>
-                                                        <option value="Neo 550">Neo 550</option>
-                                                        <option value="Neo Vortex">Neo Vortex</option>
-                                                        <option value="Kraken">Kraken</option>
-                                                        <option value="Falcon">Falcon</option>
-                                                        <option value="Cim">Cim</option>
+                                                        <option>Select Color</option>
+                                                        <option value="Neo">Blue</option>
+                                                        <option value="Neo 550">Red</option>
+                                                        
 
                                                     </select>
                                                 </div>
 
                                                 <div class="input-field">
-                                                    <label for="robotWeightSelect" class="radio-group">Robot's weight</label>
+                                                    <label for="robotWeightSelect" class="radio-group">HP Position</label>
                                                     <select type="select" name="robotWeightSelect" id="robotWeightSelect" >
 
-                                                        <option>Select option</option>
-                                                        <option value="X">X</option>
-                                                        <option value="X">X</option>
-                                                        <option value="X">X</option>
+                                                        <option>Select Initial Position</option>
+                                        
+                                                        <option value="source">Source</option>
+                                                        <option value="amp">Amp</option>
 
                                                     </select>
                                                 </div>
@@ -141,17 +138,13 @@
                                                 
 
                                                 <div class="input-field">
-                                                    <label class="radio-group" for="wheel-type">Wheel type</label>
-                                                    <select type="select"  id="wheel-type" name="tipoDeLlanta">
+                                                    <label class="radio-group" for="pre-loaded">Pre-loaded note?</label>
+                                                    <select type="select"  id="pre-loaded" name="preLoaded">
 
-                                                        <option >Select Wheel</option>
-                                                        <option value="omni">Omni</option>
-                                                        <option value="colson">Colson</option>
-                                                        <option value="kop">Kop</option>
-                                                        <option value="plaction">Plaction</option>
-                                                        <option value="pneumatic">Pneumatic</option>
-                                                        <option value="mecanum">Mecanum</option>
-                                                        <option value="other">Other:</option>
+                                                        <option >Select</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="cno">No</option>
+                                                        
                                                     
                                                     </select>
                                                 </div>
